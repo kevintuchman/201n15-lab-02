@@ -1,3 +1,2 @@
 "use strict";
-
-alert('Hello, please answer these five questions.')
+prompt("what is your name");
