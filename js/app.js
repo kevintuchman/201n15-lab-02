@@ -5,7 +5,7 @@ alert('I like watching a good show; being stuck in Alaska does this to you. Answ
 var rickMorty = prompt('Have I ever watched Rick and Morty?');
 //  rickMorty = rickMorty.lowercase();
 
-if(watch rickMorty.toUppercase() === 'yesS'){
+if(rickMorty.toUppercase() === 'yes'){
   alert('Correct, but I could care less if they released a new season now.')
 } else  {
   alert('Incorrect.');
@@ -14,7 +14,7 @@ if(watch rickMorty.toUppercase() === 'yesS'){
 var boJack = prompt ('Have I ever watched Bojack Horseman?');
 // boJack = boJack.lowercase();
 
-if(watch boJack.toUppercase() === 'yes'){
+if(boJack.toUppercase() === 'yes'){
   alert('Correct, but I found the last season lackluster.')
 } else  {
   alert('Incorrect.');
@@ -23,8 +23,8 @@ if(watch boJack.toUppercase() === 'yes'){
 var gameOfthrones = prompt ('Have I ever watched Game of Thrones?');
 // gameOfthrones = gameOfthrones.lowercase();
 
-if(didnotwatch gameOfthrones.toUppercase() === 'no');{
-  alert('Correct, I only seen 15 minutes of it before deciding it was not for me.')
+if(gameOfthrones.toUppercase() === 'no'){
+  alert('Correct, I only seen 15 minutes of it before deciding it was not for me.');
 } else {
   alert('Incorrect.');
 }
@@ -32,7 +32,7 @@ if(didnotwatch gameOfthrones.toUppercase() === 'no');{
 var joJo = prompt ('Have I ever watched Jojo?');
 // joJo = joJo.lowercase();
 
-if(watch joJo.toUppercase() === 'yes'){
+if(joJo.toUppercase() === 'yes'){
   alert('Correct, I watch a little bit with my dad now when I have the time.')
 } else {
   alert('Incorrect.')
@@ -41,8 +41,8 @@ if(watch joJo.toUppercase() === 'yes'){
 var samuraiChamploo = prompt ('Have I ever watched Samurai Champloo?');
 // samuraiChamploo = samuraiChamploo.lowercase();
 
-if(watch samuraiChamploo.toUpperCase() === 'yes');{
-  alert('Correct, I watched a few years ago in Kodiak.')
+if(samuraiChamploo.toUpperCase() === 'yes'){
+  alert('Correct, I watched a few years ago in Kodiak.');
 } else {
-  alert('Incorrect.')
+  alert('Incorrect.');
 }
