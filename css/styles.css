@@ -6,10 +6,13 @@ ul  {
   background-color: blue
 }
 
-.center {
+ul {
   margin: auto;
   width: auto;
   border: 10 px blue;
   padding: 15px;
+}
+
+footer {
   text-align: center;
 }
