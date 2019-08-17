@@ -3,7 +3,7 @@
 alert('I like watching a good show; being stuck in Alaska does this to you. Answer these five questions to know a little more about myself and the shows I enjoy watching.')
 
 var rickMorty = prompt('Have I ever watched Rick and Morty?');
-//  rickMorty = rickMorty.lowercase();
+rickMorty = rickMorty.toLowerCase();
 console.log('Kevin watched this show?' + rickMorty);
 
 if(rickMorty === 'yes' || rickMorty === 'y'){
@@ -13,7 +13,7 @@ if(rickMorty === 'yes' || rickMorty === 'y'){
 }
 
 var boJack = prompt ('Have I ever watched Bojack Horseman?');
-// boJack = boJack.lowercase();
+boJack = boJack.toLowerCase();
 console.log('Kevin watched this show?' + boJack);
 
 if(boJack === 'yes' || boJack === 'y'){
@@ -23,7 +23,7 @@ if(boJack === 'yes' || boJack === 'y'){
 }
 
 var gameOfthrones = prompt ('Have I ever watched Game of Thrones?');
-// gameOfthrones = gameOfthrones.lowercase();
+gameOfthrones = gameOfthrones.toLowerCase();
 console.log('Kevin watched this show?' + gameOfthrones);
 
 if(gameOfthrones === 'no' || gameOfthrones === 'n'){
@@ -33,7 +33,7 @@ if(gameOfthrones === 'no' || gameOfthrones === 'n'){
 }
 
 var joJo = prompt ('Have I ever watched Jojo?');
-// joJo = joJo.lowercase();
+joJo = joJo.toLowerCase();
 console.log('Kevin watched this show?' + joJo);
 
 if(joJo === 'yes' || joJo === 'y'){
@@ -43,7 +43,7 @@ if(joJo === 'yes' || joJo === 'y'){
 }
 
 var samuraiChamploo = prompt ('Have I ever watched Samurai Champloo?');
-// samuraiChamploo = samuraiChamploo.lowercase();
+samuraiChamploo = samuraiChamploo.toLowerCase();
 console.log('Kevin watched this show?' + samuraiChamploo);
 
 if(samuraiChamploo === 'yes' || samuraiChamploo === 'y'){
