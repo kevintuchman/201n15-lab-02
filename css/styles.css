@@ -13,6 +13,16 @@ ul {
   padding: 15px;
 }
 
+ol  {
+  background-color: orange
+}
+
+ol{
+  margin: auto;
+  width: auto;
+  border: 10 px black;
+  padding: 15px;
+}
 footer {
   text-align: center;
 }
