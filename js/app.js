@@ -1,13 +1,21 @@
 "use strict";
 
-alert('I like watching a good show; being stuck in Alaska does this to you. Answer these five questions to know a little more about myself and the shows I enjoy watching.')
+alert('I like watching a good show; being stuck in Alaska does this to you.')
+var userName;
+function yourName(){
+   userName = prompt ('What is your name?');
+  return userName;
 
-var rickMorty = prompt('Have I ever watched Rick and Morty?');
+}
+yourName();
+
+function tvShow(){
+  var rickMorty = prompt('Have I ever watched Rick and Morty?');
 rickMorty = rickMorty.toLowerCase();
 console.log('Kevin watched this show?' + rickMorty);
 
 if(rickMorty === 'yes' || rickMorty === 'y'){
-  alert('Correct, but I could care less if they released a new season now.')
+  alert(userName + ' it\'s correct, but I could care less if they released a new season now.')
 } else  {
   alert('Incorrect.');
 }
@@ -17,7 +25,7 @@ boJack = boJack.toLowerCase();
 console.log('Kevin watched this show?' + boJack);
 
 if(boJack === 'yes' || boJack === 'y'){
-  alert('Correct, but I found the last season lackluster.')
+  alert(userName + ' it\'s correct, but I found the last season lackluster.')
 } else  {
   alert('Incorrect.');
 }
@@ -27,7 +35,7 @@ gameOfthrones = gameOfthrones.toLowerCase();
 console.log('Kevin watched this show?' + gameOfthrones);
 
 if(gameOfthrones === 'no' || gameOfthrones === 'n'){
-  alert('Correct, well, I did watch five minutes of it before deciding it was not for me.')
+  alert(userName + ' it\'s correct, well, I did watch five minutes of it before deciding it was not for me.')
 } else {
   alert('Incorrect.');
 }
@@ -37,7 +45,7 @@ joJo = joJo.toLowerCase();
 console.log('Kevin watched this show?' + joJo);
 
 if(joJo === 'yes' || joJo === 'y'){
-  alert('Correct, I watch a little bit with my dad now when I have the time.');
+  alert(userName + ' it\'s correct, I watch a little bit with my dad now when I have the time.');
 } else {
   alert('Incorrect.');
 }
@@ -47,7 +55,11 @@ samuraiChamploo = samuraiChamploo.toLowerCase();
 console.log('Kevin watched this show?' + samuraiChamploo);
 
 if(samuraiChamploo === 'yes' || samuraiChamploo === 'y'){
-  alert('Correct, I watched the show a few years ago in Kodiak.');
+  alert(userName + ' it\'s correct, I watched the show a few years ago in Kodiak.');
 } else {
   alert('Incorrect.');
 }
+
+}
+
+tvShow();
