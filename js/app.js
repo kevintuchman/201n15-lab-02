@@ -6,7 +6,7 @@ var rickMorty = prompt('Have I ever watched Rick and Morty?');
 //  rickMorty = rickMorty.lowercase();
 console.log('Kevin watched this show?' + rickMorty);
 
-if(rickMorty.toUpperCase() === 'yes'){
+if(rickMorty.toUpperCase === 'yes' || rickMorty.toUpperCase === 'y'){
   alert('Correct, but I could care less if they released a new season now.')
 } else  {
   alert('Incorrect.');
@@ -16,7 +16,7 @@ var boJack = prompt ('Have I ever watched Bojack Horseman?');
 // boJack = boJack.lowercase();
 console.log('Kevin watched this show?' + boJack);
 
-if(boJack.toUpperCase() === 'yes'){
+if(boJack.toUpperCase === 'yes' || boJack.toUpperCase === 'y'){
   alert('Correct, but I found the last season lackluster.')
 } else  {
   alert('Incorrect.');
