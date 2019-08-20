@@ -3,10 +3,7 @@ h1  {
 }
 
 ul  {
-  background-color: blue
-}
-
-ul {
+  background-color: blue;
   margin: auto;
   width: auto;
   border: 10 px blue;
@@ -14,10 +11,7 @@ ul {
 }
 
 ol  {
-  background-color: orange
-}
-
-ol{
+  background-color: orange;
   margin: auto;
   width: auto;
   border: 10 px black;
@@ -25,4 +19,5 @@ ol{
 }
 footer {
   text-align: center;
+  background-color: pink;
 }
