@@ -61,34 +61,3 @@ if(samuraiChamploo === 'yes' || samuraiChamploo === 'y'){
 }
 
 }
-
-tvShow();
-
-// function sixthQuestion(totalPokemon){
-//   var i = 0;
-//   while (i < 4) {
-//     i++;
-//       alert('Retry' + i + '/4');
-//       var countEpisodes = prompt(userName + ", how many episodes of Pokemon did I watch as a child?");
-//       console.log('Attempts' + i + 'is' + countEpisodes);
-//       var countEpisodesInt = paraseInt(countEpisodes);
-//         if (typeof (countEpisodesInt) === 'number') {
-//           if  (countEpisodesInt === totalPokemon) {
-//             alert(userName +', that\'s correct!');
-//             count++;
-//             break;
-//           } else if (countEpisodesInt < 250)  {
-//             alert (userName + ', that\'s a low estimate.');
-//           } else if (countEpisodesInt > 250)  {
-//             alert (userName + ', that\'s a high estimate.');
-//           }
-//           }
-//           else if (typeof (countEpisodesInt) === 'string')  {
-//             alert('Value has to be integer');
-//           }
-//           }
-//         }
-//   }
-// }
-
-// sixthQuestion(200);
