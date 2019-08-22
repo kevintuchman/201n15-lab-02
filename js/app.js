@@ -1,6 +1,6 @@
 "use strict";
 
-alert('I like watching a good show; being stuck in Alaska does this to you.')
+alert('I like watching a good show; could you guess which shows I\'ve watched?')
 var userName;
 function yourName(){
    userName = prompt ('What is your name?');
@@ -59,5 +59,5 @@ if(samuraiChamploo === 'yes' || samuraiChamploo === 'y'){
 } else {
   alert('Incorrect.');
 }
-
 }
+
