@@ -61,7 +61,7 @@ if(samuraiChamploo === 'yes' || samuraiChamploo === 'y'){
 }
 }
 
-fiveQuestions();
+tvShow();
 
 function sixthQuestion(totalStates){
   var i = 0
