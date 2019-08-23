@@ -1,7 +1,8 @@
-"use strict";
+'use strict';
 
-alert('I like watching a TV shows; could you guess which shows I\'ve watched?')
+alert('I like watching good shows on TV. Play this guessing game to find out which TV shows I watched.')
 var userName;
+var count = 0;
 function yourName(){
   userName = prompt ('What is your name?');
   console.log('user name is ' + userName);
@@ -16,7 +17,8 @@ rickMorty = rickMorty.toLowerCase();
 console.log('Kevin watched this show?' + rickMorty);
 
 if(rickMorty === 'yes' || rickMorty === 'y'){
-  alert(userName + ', that\'s correct, but I could care less if they released a new season now.')
+  alert(userName + ', that\'s correct, but I could care less if they released a new season now.');
+  count++;
 } else  {
   alert('Incorrect.');
 }
@@ -26,7 +28,8 @@ boJack = boJack.toLowerCase();
 console.log('Kevin watched this show?' + boJack);
 
 if(boJack === 'yes' || boJack === 'y'){
-  alert(userName + ', that\'s correct, but I found the last season lackluster.')
+  alert(userName + ', that\'s correct, but I found the last season lackluster.');
+  count++;
 } else  {
   alert('Incorrect.');
 }
@@ -36,7 +39,8 @@ gameOfthrones = gameOfthrones.toLowerCase();
 console.log('Kevin watched this show?' + gameOfthrones);
 
 if(gameOfthrones === 'no' || gameOfthrones === 'n'){
-  alert(userName + ', that\'s correct, well, I did watch five minutes of it before deciding it was not for me.')
+  alert(userName + ', that\'s correct, well, I did watch five minutes of it before deciding it was not for me.');
+  count++;
 } else {
   alert('Incorrect.');
 }
@@ -47,6 +51,7 @@ console.log('Kevin watched this show?' + joJo);
 
 if(joJo === 'yes' || joJo === 'y'){
   alert(userName + ', that\'s correct, I watch a little bit with my dad now when I have the time.');
+  count++;
 } else {
   alert('Incorrect.');
 }
@@ -57,6 +62,7 @@ console.log('Kevin watched this show?' + samuraiChamploo);
 
 if(samuraiChamploo === 'yes' || samuraiChamploo === 'y'){
   alert(userName + ', that\'s correct, I watched the show a few years ago in Kodiak.');
+  count++;
 } else {
   alert('Incorrect.');
 }
@@ -69,11 +75,12 @@ function sixthQuestion(totalStates){
   while (i < 4){
     i++;
    
-    var countStates = prompt(userName + ", how many states have I lived in?");
+    var countStates = prompt(userName + ', how many states have I lived in?');
     console.log('Total States attempt' + i + 'is' + countStates);
     // if (typeof (countStatesInt) === 'number') {
       if (countStates == totalStates) {
         alert('That\'s correct, ' + userName + '.');
+        count++;
         break;
       } else if (countStates <= 1) {
         alert('That\'s too low ' + userName + '.');
@@ -91,37 +98,33 @@ function sixthQuestion(totalStates){
 
 sixthQuestion(2);
 
+var pokémonNames = ['squirtle', 'flygon', 'ralts', 'raichu']
+
 function seventhQuestion(){
   for (var j = 1; j <= 6; j++){
-    var pokémonNames = ["Gyarados", "Raichu", "Alolan Raichu", "Beedrill", "Mega Beedrill", "Ralts", "Espeon", "Gardevoir", "Flygon", "Metagross", "Trapinch", "Cyndaquil", "Totodile", "Typhlosion", "Feraligatr", "Primarina", "Incineroar", "Nidoking", "Salamence", "Sawsbuck", "Chandelure", "Haxorus", "Aegislash", "Mega Mawile", "Noivern", "Tapu Koko", "Tapu Lele", "Tapu Fini", "Tapu Bulu", "Blacephalon", "Bisharp", "Joltik", "Galvantula", "Volcarona", "Larvesta", "Garchomp", "Staraptor", "Empoleon", "Mega Manectric", "Dragonite", "Alolan Marowak", "Arcanine", "Regice", "Alolan Ninetails", "Ninetails", "Torkoal", "Venusaur", "Bulbasaur", "Squirtle", "Blastoise", "Hawlucha", "Froslass", "Zekrom", "Mimikyu", "Azumarill", "Marill", "Mega Lopunny", "Lucario", "Mega Lucario", "Exploud", "Toxapex", "Loudred", "Whismur", "Silvally", "Naganadel", "Pheromosa", "Xurkitree", "Rotom"]
-    
-    for (var i = 0; i < pokémonNames.length; i++){
-      console.log(pokemonNames[i] + " " + " is a Pokémon name");
-    }
-    alert('Attempt Number '+j+'/6');
-    var guessPokemon = prompt("Name a Pokémon I like!")
+    var guessPokémon = prompt('Name a Pokémon I like!')
 
-    console.log("Guess Pokémon" + " " + guessPokemon)
-      guessPokemon = guessPokemon.toLowerCase();
+    console.log('Guess Pokémon ' + guessPokémon);
+    guessPokémon = guessPokémon.toLowerCase();
 
-    if (pokemonNames.indexOf(guessPokemon) > -1)  {
-      alert(guessPokemon + " is one of my favorites!")
+    if (pokémonNames.indexOf(guessPokémon) > -1)  {
+      alert(guessPokémon + ' is one of my favorites!');
       count++;
       break;
     } else {
-      alert(guessPokemon + " isn\t one of my favorites.")
+      alert(guessPokémon + ' isn\'t one of my favorites.\n\nThat was attempt number ' + j + '/6');
     }
     }
-
-    alert(userName + ' your total score is ' + count + '/7');
 
   }
-  
   seventhQuestion();
 
+  alert('My list of pokemon I like is: ' + pokémonNames[0] + ', ' + pokémonNames[1] + ', ' + pokémonNames[2] + ', and ' + pokémonNames[3] + '.');
+
+  console.log('Count value is ' + count);
   if (count >= 5) {
     alert(userName + ' didn\'t fail!');
   }
   else {
-    alert(userName + ' will try harder next time!');
+    alert(userName + ', you answered ' + count + ' of seven correctly, try harder next time!');
   }
