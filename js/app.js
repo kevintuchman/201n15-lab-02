@@ -1,9 +1,10 @@
 "use strict";
 
-alert('I like watching a good show; could you guess which shows I\'ve watched?')
+alert('I like watching a TV shows; could you guess which shows I\'ve watched?')
 var userName;
 function yourName(){
-   userName = prompt ('What is your name?');
+  userName = prompt ('What is your name?');
+  console.log('user name is ' + userName);
   return userName;
 
 }
@@ -63,29 +64,29 @@ if(samuraiChamploo === 'yes' || samuraiChamploo === 'y'){
 
 tvShow();
 
-// function sixthQuestion(totalStates){
-//   var i = 0
-//   while (i < 5){
-//     i++;
-//     alert ('Attempt Number' + i +'/5');
-//     var countStates = prompt(userName + ", how many States have I lived in?");
-//     console.log('Total States attempt' + i + 'is' + countStates);
-//     var countStatsInt =  parseInt(countStates);
-//     if (typeof (counterStatesInt) === 'number') {
-//       if (countStatesInt === totalStates) {
-//         alert('That\'s correct, ' + userName + '.');
-//         count++;
-//         break;
-//       } else if (countStates < 1) {
-//         alert('That\'s too low' + userName + '.');
-//       } else if (countStatesInt > totalStates) {
-//         alert('I don\'t move around that much' + userName + '.');
-//       }
-//       else if (typeof (countStatesInt) === 'string')  {
-//         alert('Value has to be integer to work.');
-//       }
-//       }
-//     }
-//   }
+function sixthQuestion(totalStates){
+  var i = 0
+  while (i < 5){
+    i++;
+   
+    var countStates = prompt(userName + ", how many states have I lived in?");
+    console.log('Total States attempt' + i + 'is' + countStates);
+    // if (typeof (countStatesInt) === 'number') {
+      if (countStates == totalStates) {
+        alert('That\'s correct, ' + userName + '.');
+        break;
+      } else if (countStates <= 1) {
+        alert('That\'s too low ' + userName + '.');
+        if(i < 5){alert ('That was Attempt Number ' + i +'/5');}
+      } else if (countStates >= totalStates) {
+        alert('I don\'t move around that much ' + userName + '.');
+        if(i < 5){alert ('That was Attempt Number ' + i +'/5');}
+      }
+      else if (typeof (countStates) === 'string')  {
+        alert('Value has to be integer to work.');
+      // }
+      }
+    }
+  }
 
-//   totalStates(2);
+sixthQuestion(2);
