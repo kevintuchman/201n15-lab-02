@@ -86,7 +86,7 @@ function sixthQuestion(totalStates){
         alert('That\'s too low ' + userName + '.');
         if(i < 4){alert ('That was Attempt Number ' + i +'/4');}
       } else if (countStates >= totalStates) {
-        alert('I don\'t move around that much ' + userName + '.');
+        alert('I don\'t move around that much, ' + userName + '.');
         if(i < 4){alert ('That was Attempt Number ' + i +'/4');}
       }
       else if (typeof (countStates) === 'string')  {
