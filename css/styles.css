@@ -1,18 +1,53 @@
 h1  {
-  background-color: gray
+  text-align: center;
+  background-color: blue;
+  color: turquoise;
+}
+
+h2  {
+  text-align: center;
+  background-color: salmon
+}
+
+h3  {
+  text-align: center;
+  background-color: salmon
+}
+
+h4{
+  text-align: center;
+  background: salmon
 }
 
 ul  {
-  background-color: blue
-}
-
-ul {
+  text-align: center;
+  background-color: purple;
   margin: auto;
   width: auto;
   border: 10 px blue;
   padding: 15px;
+  color: pink;
+}
+
+ol  {
+  text-align: center;
+  background-color: purple;
+  margin: auto;
+  width: auto;
+  border: 10 px blue;
+  padding: 15px;
+  color: pink;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
 footer {
   text-align: center;
+  background-color: blue;
+  color: turquoise;
 }
